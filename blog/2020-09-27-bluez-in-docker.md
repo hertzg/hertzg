@@ -5,7 +5,7 @@
 
 # Result so far - 12:25 am (+1 day)
 
-@ndessart I ended up using the nsenter (very reluctantly) as it seems like bluetooth hci is global on the system and as you mentioned is not supported in network namespaces. I ended up with the following in the end.
+I ended up using the nsenter (very reluctantly) as it seems like bluetooth hci is global on the system and as you mentioned is not supported in network namespaces. I ended up with the following in the end.
 
 **Dockerfile**:
 ```Dockerfile
