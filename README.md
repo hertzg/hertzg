@@ -3,9 +3,10 @@
 I see you have wondered to my personal page 🧙‍♂️ ... Well I hope you find something of interest for you.
 If you are looking for ways to reach me you can use the appropriate links below:
 
-* [💼 Linked.in George](https://www.linkedin.com/in/george-kotchlamazashvili-52220085)
 * [🐙 Github @hertzg](https://github.com/hertzg)
 * [🐦 Twitter @hertz_g](https://twitter.com/hertz_g)
+* [📝 Dev.to @hertzg](https://dev.to/hertzg/)
+* [💼 Linked.in George](https://www.linkedin.com/in/george-kotchlamazashvili-52220085)
 
 ### Some random facts
 - 🔭 I’m currently working on [reverse engineering kitchen scale BLE protocol](https://github.com/hertzg/etekcity)
