@@ -2,16 +2,19 @@
 
 
 1. Ensure you have latest yarn
+
 ```
 npm i -g yarn
 ```
 
 2. Make yarn switch to v2 version a.k.a. `berry`
+
 ```
 yarn set version berry
 ```
 
 3. Update the .gitignore respectively
+
 ```
 # Ignore Yarn 2 files including Zero-Installs
 .yarn/*
@@ -23,6 +26,7 @@ yarn set version berry
 ```
 
 4. (optional) Mark generated and vendored `.gitattributes` for GitHub language detector (linguist)
+
 ```
 # Mark .zip files as binary to prevent git from trying to merge it
 *.zip                   binary
