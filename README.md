@@ -16,6 +16,7 @@ If you are looking for ways to reach me you can use the appropriate links below:
 - 😄 Pronouns: he/him
 
 ### Today I Learned 
+* [2021-02-10-per-project-yarn-2-and-zero-installs](til/2021-02-10-per-project-yarn-2-and-zero-installs.md)
 * [2020-10-11-make-github-actions-skip-commits-containing-skip-ci](til/2020-10-11-make-github-actions-skip-commits-containing-skip-ci.md)
 
 ### (not really) blog posts
