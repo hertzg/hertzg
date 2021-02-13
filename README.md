@@ -23,5 +23,6 @@ looking for ways to reach me you can use the appropriate links below:
 
 ### (not really) blog posts
 
+* [2021-02-13-buildx-each-arch-and-manually-create-manifest-list](blog/2021-02-13-buildx-each-arch-and-manually-create-manifest-list.md)
 * [2020-09-27-bluez-in-docker](blog/2020-09-27-bluez-in-docker.md)
 
