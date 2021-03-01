@@ -205,7 +205,7 @@ docker manifest create --insecure
         localhost:5000/app:linux-ppc64le \
         localhost:5000/app:linux-s390x
 
-docker manifest create localhost:5000/app:1.0.0
+docker manifest push localhost:5000/app:1.0.0
 ```
 
 ## Step 3.1: Skopeo
