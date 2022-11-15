@@ -18,6 +18,7 @@ looking for ways to reach me you can use the appropriate links below:
 
 ### Today I Learned
 
+* [2022-11-15-using-vscode-for-as-quick-meld](til/2022-11-15-using-vscode-for-as-quick-meld.md)
 * [2021-12-06-git-fetch-configs](til/2021-12-06-git-fetch-configs.md)
 * [2021-02-10-per-project-yarn-2-and-zero-installs](til/2021-02-10-per-project-yarn-2-and-zero-installs.md)
 * [2020-10-11-make-github-actions-skip-commits-containing-skip-ci](til/2020-10-11-make-github-actions-skip-commits-containing-skip-ci.md)
