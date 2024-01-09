@@ -14,7 +14,6 @@ looking for ways to reach me you can use the appropriate links below:
 - 🌱 I’m currently learning [containers and linux capabilities](https://twitter.com/Hertz_G/status/1310306592534016003)
 - 👯 I’m looking to collaborate on any node-js related libs or apps
 - 💬 Ask me about anything
-- 😄 Pronouns: he/him
 
 ### Today I Learned
 
