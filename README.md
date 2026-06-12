@@ -24,6 +24,7 @@ looking for ways to reach me you can use the appropriate links below:
 
 ### (not really) blog posts
 
+* [2026-06-13-ender3-klipper-pi4-boot-53s-to-24s](blog/2026-06-13-ender3-klipper-pi4-boot-53s-to-24s.md)
 * [2021-02-13-buildx-each-arch-and-manually-create-manifest-list](blog/2021-02-13-buildx-each-arch-and-manually-create-manifest-list.md)
 * [2020-09-27-bluez-in-docker](blog/2020-09-27-bluez-in-docker.md)
 
