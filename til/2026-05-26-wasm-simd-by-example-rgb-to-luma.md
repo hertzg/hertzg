@@ -8,7 +8,7 @@ Spoiler first, theory after. The entire trick of this page: take code A, a loop 
 job-interview warmup, teach it to speak 16-pixels-at-a-time lane language (code B), and the same math comes out
 **~4× faster**. One file, nothing to install besides deno, and it compiles its own AssemblyScript at startup:
 
-<details>
+<details markdown="1">
 <summary>🪄 code A → code B, runnable and benchmarked (click to spoil yourself)</summary>
 
 ```ts
@@ -150,7 +150,7 @@ $ deno bench -A luma_bench.ts
 ~4× on a single core for a 12-megapixel photo (and the integer trick alone is worth ~20% before any SIMD).
 Every weird-looking line in code B is explained below.
 
-> [!NOTE]
+> **Note:**
 > The SIMD bench reads and writes buffers that already live inside wasm memory, while the JS versions get plain
 > arrays — fair for measuring the kernel itself, but in real use the pixels have to get into wasm memory first.
 > The [dither post](../blog/2026-05-25-eink-dithering-wasm-simd-64ms-to-16ms.md) covers that plumbing.
@@ -218,7 +218,7 @@ Multiplying by a Q15 constant is integer-multiply then `>> 15`. Rounding is addi
 before the shift. And the constants summing to *exactly* 32768 is deliberate: dividing by the total weight becomes
 an exact `>> 15`, so pure white (255,255,255) comes out as exactly 255, no bias.
 
-> [!NOTE]
+> **Note:**
 > For the careful reader: JS bitwise ops (`>>`, `<<`) secretly run on 32-bit signed ints, so they misbehave
 > near 2^31. Everything here peaks at ~23 bits, far below the cliff, so that quirk is ignored for brevity. Read
 > the integer math as if numbers had no width limit, BigInt-style, and you'll predict every result correctly.
@@ -427,7 +427,7 @@ function i8x16_narrow_i16x8_u(a: Int16Array, b: Int16Array): Uint8Array {
 }
 ```
 
-> [!NOTE]
+> **Note:**
 > Both `narrow` ops **saturate**. A plain TS `Int16Array.from(...)` cast would silently wrap out-of-range values;
 > `narrow_..._s` clamps into the i16 range and the final `narrow_..._u` clamps into 0..255. (Luma never exceeds
 > 255 here so neither clamp triggers, but it's why these are real ops and not bit-casts.)
@@ -456,7 +456,7 @@ is amortization: one instruction fetch + decode + dispatch + retire now buys 16 
 front-end (a real bottleneck in tight loops) does 1/16th of the work. And WASM `v128` compiles ~1:1 to native
 vector instructions (NEON on Apple Silicon, SSE/AVX on x86), so none of this is lost in translation.
 
-<details>
+<details markdown="1">
 <summary>🔬 Zoom in on the carry wire (optional silicon detour)</summary>
 
 A 128-bit adder is 128 one-bit "full adder" cells in a row. Each cell adds two input bits plus a carry from its
